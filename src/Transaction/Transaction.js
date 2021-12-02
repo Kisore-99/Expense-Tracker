@@ -10,13 +10,13 @@ const Transaction = ({ transaction, content }) => {
     <div className="transaction-container">
       <ul className="list">
         <li className={content === "income" ? "income" : "expense"}>
-          <p>
+          <p className="transaction-detail">
             <span className="del-btn" onClick={() => deleteTransaction(transaction.id)}>
               X
             </span>
             {transaction.source}
           </p>
-          <p>{moneyFormatter(Math.abs(transaction.amount))}</p>
+          <p className="amt">{moneyFormatter(Math.abs(transaction.amount))}</p>
         </li>
       </ul>
     </div>

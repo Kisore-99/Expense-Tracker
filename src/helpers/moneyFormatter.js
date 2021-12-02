@@ -1,7 +1,6 @@
 //Money formatter function
 export default function moneyFormatter(num) {
   let p = num.toFixed(2).split(".");
-  console.log(p[0].split("").reverse());
   return (
     "Rs " +
     (p[0].split("")[0] === "-" ? "-" : "") +

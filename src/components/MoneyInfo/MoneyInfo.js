@@ -19,17 +19,18 @@ const MoneyInfo = () => {
   return (
     <div className="bal-container">
       <div className="bal-info">
-        <h4 className="bal-header">Balance</h4>
-        <p className="bal-amount">{moneyFormatter(totalIncome - totalExpense)}</p>
+        <h4 className="bal-header">
+          Balance <span className="bal-amount">{moneyFormatter(totalIncome - totalExpense)}</span>
+        </h4>
       </div>
       <div className="inc-exp-container">
         <div>
           <h4>Income</h4>
-          <p className="money plus">{moneyFormatter(totalIncome)}</p>
+          <p className="plus">{moneyFormatter(totalIncome)}</p>
         </div>
         <div>
           <h4>Expense</h4>
-          <p className="money plus"> {moneyFormatter(totalExpense)}</p>
+          <p className="minus"> {moneyFormatter(totalExpense)}</p>
         </div>
       </div>
     </div>

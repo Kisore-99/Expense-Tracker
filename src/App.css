@@ -20,6 +20,27 @@ body {
   grid-template-columns: repeat(auto-fill, 49vw);
 }
 
+.transaction-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .transaction-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+}
+
 h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
@@ -30,10 +51,4 @@ h3 {
 h4 {
   margin: 0;
   text-transform: uppercase;
-}
-
-.transaction-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center;
 }
