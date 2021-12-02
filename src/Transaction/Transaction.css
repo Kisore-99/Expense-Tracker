@@ -1,0 +1,35 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list li {
+  background-color: rgb(214, 210, 210);
+  box-shadow: rgb(219, 91, 91);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px;
+  margin: 2px 0;
+  width: 30vw;
+}
+
+.income {
+  border-right: 2px solid green;
+}
+
+.expense {
+  border-right: 2px solid red;
+}
+
+.del-btn {
+  margin: 0 10px;
+  background: rgb(224, 85, 85);
+  padding: 5px;
+  cursor: pointer;
+}

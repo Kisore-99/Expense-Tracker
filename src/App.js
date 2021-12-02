@@ -1,9 +1,8 @@
 import React from "react";
-import { Header } from "./components/Header";
-import { Balance } from "./components/Balance";
-import { IncomeExpenses } from "./components/IncomeExpenses";
-import { TransactionList } from "./components/TransactionList";
-import { AddTransaction } from "./components/AddTransaction";
+import Input from "./components/Input/Input";
+import MoneyInfo from "./components/MoneyInfo/MoneyInfo";
+import IncomesList from "./components/IncomesList/IncomesList";
+import ExpensesList from "./components/ExpensesList/ExpensesList";
 import { GlobalProvider } from "./context/GlobalState";
 
 import "./App.css";
@@ -11,12 +10,13 @@ import "./App.css";
 function App() {
   return (
     <GlobalProvider>
-      <Header />
-      <div className="container">
-        <Balance />
-        <IncomeExpenses />
-        <TransactionList />
-        <AddTransaction />
+      <div className="main-container">
+        <Input />
+        <MoneyInfo />
+      </div>
+      <div className="transaction-list">
+        <IncomesList />
+        <ExpensesList />
       </div>
     </GlobalProvider>
   );
